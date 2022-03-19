@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Best wishes</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container p-5">
+			<div class="text-center">
+				<h5 id="name_print" class="text-capitalize"></h5>
+				<p>Wishes You <br> Happy Holi</p>
+			</div>
+			<form action="" method="POST" enctype="multipart/form-data">
+				<div class="row d-flex justify-content-center text-center">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<input type="text" name="name" id="username" placeholder="Enter Your Name" class="form-control">
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" value="Show" class="btn btn-primary" id="" onclick="return show()" />
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="text-center">
+				<h5 id="name_print2" class="text-capitalize"></h5>
+				<p>Wishes You <br> Happy Holi</p>
+			</div>
+		</div>
+		<script>
+			function nameview() {
+				var get_name = document.getElementById("name_print");
+				var get_name2 = document.getElementById("name_print2");
+				var total = window.location.search;
+				var split= total.slice(1).split("?")[0].split("=")[1];
+				get_name.innerHTML=split;
+				get_name2.innerHTML=split;
+			}
+			nameview();
+			function show() {
+				var name = document.getElementById("username").value;
+				if (name!="") {
+					var user_input = sessionStorage.setItem('name',JSON.stringify(name));;
+					location.replace('share.html'); 					
+				}
+				return false;
+		}
+		
+		</script>
+	</body>
+</html>

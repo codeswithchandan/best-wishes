@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Best wishes</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container p-5">
+			<form action="">
+			<div class="text-center">
+				<h5 id="uname" class="text-capitalize"></h5>
+				<p>Wishes You <br> Happy Holi</p>
+			</div>
+
+			
+				<div class="row d-flex justify-content-center text-center">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<input type="submit" value="share" id="mainbtn" class="btn btn-success" id="" onclick="return send_data()" data-action="share/whatsapp/share">
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="text-center">
+				<h5 id="uname2" class="text-capitalize"></h5>
+				<p>Wishes You <br> Happy Holi</p>
+			</div>
+		</div>
+<script>
+	function getname() {
+		var local_data = sessionStorage.getItem('name');
+		var user_detail = JSON.parse(local_data);
+		document.getElementById("uname").innerHTML=user_detail;
+		document.getElementById("uname2").innerHTML=user_detail;
+	}
+	getname();
+
+	function send_data(){
+		
+		var local_data = sessionStorage.getItem('name');
+		var user_detail = JSON.parse(local_data);
+		var data = document.getElementById("uname").innerHTML=user_detail;
+		var main= "http://localhost/best-wishes-php-js/index.html?n="+data ;
+		var link = document.createElement("A");
+		var button = document.getElementById("mainbtn").appendChild(link);
+		var alllink= link.href="https://api.whatsapp.com/send?text="+main;
+		alllink.click();
+		return false;
+	}
+</script>
+	</body>
+</html>
