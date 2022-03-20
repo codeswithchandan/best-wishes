@@ -43,11 +43,11 @@
 				get_name2.innerHTML=split;
 			}
 			nameview();
-			function show() {
+			const show = () => {
 				var name = document.getElementById("username").value;
 				if (name!="") {
 					var user_input = sessionStorage.setItem('name',JSON.stringify(name));;
-					location.replace('share.html'); 					
+										location.replace('share.html');
 				}
 				return false;
 		}
