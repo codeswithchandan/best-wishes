@@ -21,7 +21,6 @@ width: -webkit-min-content;
 width: -moz-min-content;
 width: min-content;
 margin: auto;
-text-transform: uppercase;
 background: linear-gradient(219deg,
 var(--color-1) 19%,
 transparent 19%,transparent 20%,
@@ -36,17 +35,13 @@ background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
 }
-@media screen and (min-width: 768px) {
-#name_print{
-font-size: 10rem;
-}
-}
+
 .marquee1{position:fixed;left:1%; width:auto;height:100%;top:1%;color:#000;}
 .marquee2{position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
 
 #timer {  
   font-size: 2em;
-  color: 000;
+  color: #66CC66;
 }
 
 #timer div{
