@@ -51,7 +51,7 @@ font-size: 10rem;
 
 #timer div{
 	display: inline-block;
-    min-width: 75px;
+    min-width: 60px;
 }
 
 #timer span{
