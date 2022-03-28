@@ -91,3 +91,7 @@ color: transparent;
 	color: #FF0066;
 	border:5px solid green;
 }
+a{
+	text-decoration: none;
+	color: #fff;
+}
