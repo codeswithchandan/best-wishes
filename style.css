@@ -55,3 +55,35 @@ color: transparent;
       font-size: .35em;
       font-weight: 400;
 }
+
+/* Loader styling codes */
+.loader_container{
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:1111;
+}
+
+.left-slide22,.right-slide22{
+	width: 50%;
+	position: absolute;
+	min-height: 100%;
+	z-index:1111;
+}
+
+.left-slide22{
+	left: 0;
+	top: 0;
+}
+.right-slide22{
+	right: 0;
+	top: 0;
+}
+ 	.loader_icon{
+ 	position: absolute;
+	top: 17%;
+	left:15%;
+	z-index:1111;
+}

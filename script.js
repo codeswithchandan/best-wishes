@@ -1,3 +1,15 @@
+window.onload = function(){
+$(".loader_icon").click(function(){
+    $(".loader_icon").fadeOut(500,function(){
+        $(".left-slide22,.right-slide22").animate({
+            "width":"0%"
+        },500,function(){
+            $(".loader_container").fadeOut();
+        });
+    });
+});
+};
+
 function updateTimer() {
   future  = Date.parse("April 10, 2022 00:00:00");
   now     = new Date();
