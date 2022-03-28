@@ -63,14 +63,14 @@ color: transparent;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index:1111;
+	z-index:111111;
 }
 
 .left-slide22,.right-slide22{
 	width: 50%;
 	position: absolute;
 	min-height: 100%;
-	z-index:1111;
+	z-index:111111;
 }
 
 .left-slide22{
@@ -85,7 +85,7 @@ color: transparent;
  	position: absolute;
 	top: 19%;
 	left:18%;
-	z-index:1111;
+	z-index:111111;
 }
 .new{
 	color: #FF0066;

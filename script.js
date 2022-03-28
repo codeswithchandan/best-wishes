@@ -8,7 +8,14 @@ $(".loader_icon").click(function(){
         });
     });
 });
+
 };
+
+function PlaySound() {
+  var sound = document.getElementById("audioplay");
+  sound.play()
+}
+
 
 function updateTimer() {
   future  = Date.parse("April 10, 2022 00:00:00");

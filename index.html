@@ -3,7 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Best wishes</title>
+		<meta name="robots" content="noindex" />
+	    <meta name="google" content="notranslate" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta property="og:type" content="!!Wish You Happy Ramnavami 2022!!" />
+	    <meta property="og:url" content="#"/>
+	    <meta property="og:keywords" keyword="!!Wish You Happy Ramnavami 2022!!">
+	    <meta property="og:site_name" content="😀😀😍😍"/>
+		<title>Wish You Happy Ramnavami 2022</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css"/>
 		<link rel="stylesheet" href="animate.css"/>
@@ -22,7 +29,7 @@
         <div class="right-slide22">
         	<img src="images/door.jpg" width="100%" height="690px">
         </div>
-        <div class="loader_icon text-center">
+        <div class="loader_icon text-center" onclick="PlaySound()">
         	<p class="card text-danger pt-2 pb-2 font-weight-bold">जादुई 👇 कलश 👇 को <br> टच करके देखो</p>
         	<img src="images/kalas.png" width="220px" height="220px">
         </div>
@@ -81,6 +88,8 @@
 				</div>
 			</form>
 		</div>
+		<audio id="audioplay" src="audio/jaisreeram.mp3" autostart="false"></audio>
+
 		<script>
 			function nameview() {
 				var get_name = document.getElementById("name_print");

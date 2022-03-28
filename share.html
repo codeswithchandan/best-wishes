@@ -3,7 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Best wishes</title>
+		<meta name="robots" content="noindex" />
+	    <meta name="google" content="notranslate" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta property="og:type" content="!!Wish You Happy Ramnavami 2022!!" />
+	    <meta property="og:url" content="#"/>
+	    <meta property="og:keywords" keyword="!!Wish You Happy Ramnavami 2022!!">
+	    <meta property="og:site_name" content="😀😀😍😍"/>
+		<title>Wish You Happy Ramnavami 2022</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css"/>
 		<link rel="stylesheet" href="animate.css"/>
@@ -13,7 +20,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body onload="PlaySound()">
+
 		<marquee class="marquee1" behavior="scroll" direction="up" scrolldelay="0">
 		<img src="images/kalas.png" width="50px" height="50px" /> <br><br>
 		<img src="images/kalas.png" width="50px" height="50px" /> <br><br>
@@ -67,6 +75,7 @@
 				</div>
 			</form>
 		</div>
+		<audio id="audioplay" src="audio/jaisreeram.mp3" autostart="false"></audio>
 		<script>
 			function getname() {
 				var local_data = sessionStorage.getItem('name');
