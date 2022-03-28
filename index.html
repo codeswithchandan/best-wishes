@@ -74,6 +74,8 @@
 				<p> की तरफ से आपको और आपके पुरे परिवार को रामनवमी की हार्दिक शुभकामनाएं</p>
 			</div>
 			</marquee>
+			<h5 id="name_print3" class="text-uppercase animated pulse infinite"></h5>
+			<br><br>
 		</div>
 		<div class="container-fluid fixed-bottom">
 			<form action="" method="POST" enctype="multipart/form-data">
@@ -93,10 +95,12 @@
 			function nameview() {
 				var get_name = document.getElementById("name_print");
 				var get_name2 = document.getElementById("name_print2");
+				var get_name3 = document.getElementById("name_print3");
 				var total = window.location.search;
 				var split= total.slice(1).split("?")[0].split("=")[1];
 				get_name.innerHTML=split;
 				get_name2.innerHTML=split;
+				get_name3.innerHTML=split;
 			}
 			nameview();
 			const show = () => {
