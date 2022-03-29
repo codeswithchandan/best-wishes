@@ -77,17 +77,6 @@
 		</div>
 
 		<script>
-			function nameview() {
-				var get_name = document.getElementById("name_print");
-				var get_name2 = document.getElementById("name_print2");
-				var get_name3 = document.getElementById("name_print3");
-				var total = window.location.search;
-				var split= total.slice(1).split("?")[0].split("=")[1];
-				get_name.innerHTML=split;
-				get_name2.innerHTML=split;
-				get_name3.innerHTML=split;
-			}
-			nameview();
 			const show = () => {
 				var name = document.getElementById("username").value;
 				if (name!="") {
