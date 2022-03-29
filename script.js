@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $("#ads").show(5000);
+});
 window.onload = function(){
 $(".loader_icon").click(function(){
     $(".loader_icon").fadeOut(500,function(){
@@ -10,6 +13,9 @@ $(".loader_icon").click(function(){
 });
 
 };
+
+
+
 
 function PlaySound() {
   var sound = document.getElementById("audioplay");
