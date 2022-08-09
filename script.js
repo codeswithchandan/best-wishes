@@ -24,7 +24,7 @@ function PlaySound() {
 
 
 function updateTimer() {
-  future  = Date.parse("April 10, 2022 00:00:00");
+  future  = Date.parse("Aug 12, 2022 00:00:00");
   now     = new Date();
   diff    = future - now;
 
